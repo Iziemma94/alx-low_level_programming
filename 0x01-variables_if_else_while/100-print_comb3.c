@@ -13,10 +13,12 @@ int main(void)
 		for (two = (one + 1); two <= 57; two++)
 		{
 			putchar (one);
+
 			putchar (two);
 			if (one != 56)
 			{
 				putchar (44);
+
 				putchar (32);
 			}
 		}
