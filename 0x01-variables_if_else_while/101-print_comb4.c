@@ -18,17 +18,14 @@ int main(void)
 
 		{
 			for (three = (two + 1); three <= 57; three++)
-			
 			{
 				putchar (one);
 				putchar (two);
 				putchar (three);
-
 				if (one != 55)
 
 				{
 					putchar (44);
-
 					putchar (32);
 
 				}
