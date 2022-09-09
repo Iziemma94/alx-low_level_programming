@@ -8,6 +8,7 @@ int main(void)
 	int one;
 
 	int two;
+
 	for (one = 48; one <= 57; one++)
 
 	{
@@ -17,6 +18,7 @@ int main(void)
 			putchar (one);
 
 			putchar (two);
+
 			if (one != 56)
 
 			{
