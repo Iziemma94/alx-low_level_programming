@@ -1,19 +1,22 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * main - main function
+ * putchar - prints _putchar followed by a new line to stdout
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
-
 int main(void)
 {
-	int a;
-	char ch[] = "_putchar";
-	for (a = 0; a < 8; a++)
-	{
-		_putchar (ch[a]);
-	}
-	_putchar ('\n');
+	_putchar ('_');
+	_putchar ('p');
+	_putchar ('u');
+	_putchar ('t');
+	_putchar ('c');
+	_putchar ('h');
+	_putchar ('a');
+	_putchar ('r');
+
+	_putchar('\n');
+
 	return (0);
 }
