@@ -1,22 +1,24 @@
 #include "main.h"
 /**
- * ore_numbers - function that prints 10 times the numbers, from 0 to 14
+ * more_numbers - prints numbers to 14
+ *
+ * Return: returns nothing
  */
 void more_numbers(void)
 {
-	int num;
-	int numx10 = 0;
+	int number1, number2;
 
-	for (numx10 = 1; numx10 <= 10; numx10++)
+	for (number1 = 0; number1 < 10; number1++)
 	{
-		for (num = 0; num <= 14; num++)
+		for (number2 = 0; number2 <= 14; number2++)
+
 		{
-			if (num >= 10)
+			if (number2 > 9)
 			{
-				_putchar((num / 10) + '0');
+				_putchar((number2 / 10) + '0');
 			}
-			_putchar ((num % 10) + '0');
+			_putchar((number2 % 10) + '0');
 		}
-		_putchar('\n');
+		_putchar(10);
 	}
 }
