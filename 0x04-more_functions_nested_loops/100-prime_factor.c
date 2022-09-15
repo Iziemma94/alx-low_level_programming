@@ -2,7 +2,7 @@
 
 /**
  * main- prints the largest prime factor
- * of a number
+ * f a number
  *
  * Return: returns 0
  */
