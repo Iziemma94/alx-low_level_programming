@@ -14,11 +14,11 @@ int _strlen(char *s)
 	i = 0;
 	len = 0;
 	while (*(s + i) != '\0')
-	{
-		len = len + 1;
-		i++;
-	}
-	return (len);
+{
+	len = len + 1;
+	i++;
+}
+return (len);
 }
 
 /**
