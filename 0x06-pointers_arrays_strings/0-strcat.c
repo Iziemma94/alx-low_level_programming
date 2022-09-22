@@ -6,44 +6,25 @@
  * Return: Lenght of the string
  */
 
-int _strlen(char *s)
-{
-	int i;
-	int len;
-
-	i = 0;
-	len = 0;
-	while (*(s + i) != '\0')
-{
-	len = len + 1;
-	i++;
-}
-return (len);
-}
-
-/**
- * _strcat - concatenates two strings.
- * @dest: Pointer to destination string
- * @src: Pointer to source string
- * Return: Pointer to resulting string dest
- */
-
 char *_strcat(char *dest, char *src)
 {
-	int lendest;
-	int lensrc;
-	int lenfdest;
-	int i;
+	int i, j;
 
-	lendest = _strlen(dest);
-	lensrc = _strlen(src);
-	lenfdest = lendest + lensrc;
 	i = 0;
-	while (lendest <= lenfdest)
+
+	while (dest[i] != '\0')
 	{
-		*(dest + lendest) = *(src + i);
-		lendest++;
 		i++;
 	}
+
+	j = 0;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
