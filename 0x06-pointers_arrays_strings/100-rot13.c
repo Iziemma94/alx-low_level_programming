@@ -17,7 +17,7 @@ char *rot13(char *a)
 		{
 			*a = code[count];
 		}
-		a++;
+	a++;
 	}
 	return (b);
 }
