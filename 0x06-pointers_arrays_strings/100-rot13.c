@@ -1,30 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_number - that prints an integer
- * @n: number to string
- * Returnn: nothing
+ * *rot13 - is a simple letter substitution cipher that replaces a letter
+ * @a: variable name
+ * Return: b value
  */
-
-void print_number(int n)
+char *rot13(char *a)
 {
-	int pot_10 = 1, sign = 1, tmp = n;
+	char *b = a;
+	char *abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'\0'";
+	char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'\0'";
+	int count;
 
-	while (tmp / 10)
+	for (count = 0; count <= 52; count++)
 	{
-		pot_10 *= 10;
-		tmp /= 10;
+		if (*a == abc[count])
+		{
+			*a = code[count];
+		}
+		a++;
 	}
-	if (tmp < 0)
-	{
-		sign *= -1;
-		_putchar('-');
-	}
-	while (pot_10 > 0)
-	{
-		tmp = n / pot_10;
-		_putchar((tmp * sign) + '0');
-		n = n - (tmp * pot_10);
-		pot_10 /= 10;
-	}
+	return (b);
 }
