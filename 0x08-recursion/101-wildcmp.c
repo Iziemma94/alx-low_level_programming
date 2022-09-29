@@ -7,7 +7,7 @@ int identical_asterisk(char *s6, char *s7, int cont_3, int cont_4);
  * wildcmp - function that compare two strings and consiere identicals
  * @s1: char to review
  * @s2: char to compare
- *
+ * 
  * Return: 1 if identical, 0 else no identical
  */
 int wildcmp(char *s1, char *s2)
