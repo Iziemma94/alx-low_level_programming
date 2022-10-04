@@ -7,6 +7,7 @@
  *
  * @width: int arg
  *
+ * @height: int arg
  *
  * Return: grid of 0s
  */
