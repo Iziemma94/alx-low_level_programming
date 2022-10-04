@@ -3,22 +3,16 @@
 #include <stdlib.h>
 
 /**
- * free_grid - function to allocate memory to grid
- * 
- * @grid: int pointer
- *
- * @height: int arg
- *
- * Return: grid of 0s
+ * free_grid - Frees a 2-dimensional array of integers
+ * @grid: variable name
+ * @height: variable name
  */
-
 void free_grid(int **grid, int height)
 {
-	int i;
+	int a;
 
-	for (i = 0; i < height; ++i)
-	{
-		free(grid[i]);
-	}
+	for (a = 0; a < height; a++)
+		free(grid[a]);
+
 	free(grid);
 }
