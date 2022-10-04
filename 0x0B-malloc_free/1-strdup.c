@@ -2,41 +2,45 @@
 #include <stdlib.h>
 
 /**
- * create_array - Returns a pointer to a newly allocated space in memory.
+ * _strdup - copy of the string given as a parameter.
  *
- * @size: unsigned int
- *
- * @c: char
+ * @str: unsigned int
  *
  * Return: char pointer
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	unsigned int counter;
-	char *character;
+	unsigned int counter1, counter2;
+	char *strCopy;
 
-	counter = 0;
+	counter1 = 0;
+	counter2 = 0;
 
+	if (str == NULL)
+	{
+		return (0);
+	}
 
-	if (size == 0)
+	while (str[counter1] != '\0')
+	{
+		counter1++;
+	}
+
+	strCopy = malloc(sizeof(char) * (counter1 + 1));
+
+	if (strCopy == NULL)
 	{
 		return (NULL);
 	}
 
-	character = malloc(sizeof(char) * size);
-
-	if (character == NULL)
+	while (counter2 < counter1)
 	{
-		return (NULL);
-	}
-	while (counter < size)
-	{
-		character[counter] = c;
-		counter++;
+		strCopy[counter2] = str[counter2];
+		counter2++;
 	}
 
-	character[counter] = '\0';
+	strCopy[counter2] = '\0';
 
-	return (character);
+	return (strCopy);
 }
