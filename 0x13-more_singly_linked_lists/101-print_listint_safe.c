@@ -1,16 +1,11 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
 
 /**
- * print_listint_safe - Write a function that prints
- * a listint_t linked list.
- * @head: the head of the listint_t
+ * print_listint_safe - prints a linked list, safely
+ * @head: list of type listint_t to print
  *
- * Return: the number of nod
+ * Return: number of nodes in the list
  */
-
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t num = 0;
@@ -25,10 +20,10 @@ size_t print_listint_safe(const listint_t *head)
 			head = head->next;
 		else
 		{
-			printf("-> [%p] %d\n",
-					(void *)head->next, head->next->n);
+			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 			break;
 		}
 	}
+
 	return (num);
 }
