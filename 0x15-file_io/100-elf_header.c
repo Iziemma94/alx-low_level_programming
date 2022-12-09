@@ -1,4 +1,7 @@
-#include"main.h"
+/*
+ * File: 100-elf_header.c
+ * Auth: Woyengitari Izon
+ */
 
 #include <elf.h>
 #include <sys/types.h>
